@@ -1,0 +1,36 @@
+
+
+
+body {
+	background: #000000;
+	color: #FFFFFF;
+
+	font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+div.centered {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+div#header {
+	background: #e28d06;
+	padding: 10px;
+
+	/* set margin on bottom & top for lulz. */
+	margin-top: 10px;
+	margin-bottom: 30px;
+
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px #c78d33;
+	-moz-box-shadow: 5px 5px 5px #c78d33;
+	-webkit-box-shadow: 5px 5px 5px #c78d33;
+}
+
+div#main {
+
+
+
+}
