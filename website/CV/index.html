@@ -2,6 +2,8 @@
 <html>
 
 	<!-- I see you are interested in my code. I appreciate that very much, please take a look around, and try to have fun. -->
+	<!-- Disclaimer: -->
+	<!-- NDkgMjAgNzIgNjUgNjEgNkMgNkMgNzkgMjAgNkMgNjkgNkIgNjUgMjAgNzAgNjEgNkUgNjMgNjEgNkIgNjUgNzMgMjEg -->
 
 	<head>
 		<title>Ákos Zsolt Hochrein - Interactive CV</title>
@@ -9,6 +11,8 @@
 		<meta name="keywords" content="Ákos,Hochrein,interactive,CV,curriculum vitae">
 		<meta name="author" content="Ákos Zsolt Hochrein">
 		<meta charset="UTF-8">
+
+		<link href="style/style.css" type="text/css" rel="stylesheet">
 
 		<script type="text/javascript">
 			/* Page variables */
@@ -18,6 +22,8 @@
 			function nameGetter() 
 			{
 				userName = document.getElementById( "nameField" ).value;
+				clearElement( "greetingText" );
+				clearElement( "nameGet" );
 				document.getElementById( "greeting" ).innerHTML = "<h2>Greetings " + userName + "</h2>";
 				clearElement( "greetingText" );
 				clearElement( "nameGet" );
@@ -26,7 +32,7 @@
 			/* Clears the element with the id in the parameter */
 			function clearElement( identifier ) 
 			{
-				document.getElementById( identifier ).innerHTML = "";
+				document.getElementById( identifier ).className = "fade";
 			} // clearElement
 
 		</script>
@@ -35,11 +41,11 @@
 	<body>
 		<div id="welcome">
 
-			<div id="greetingText">
+			<div id="greetingText" class="standard">
 				<h2>Hello, Traveller. My Name is Bill. Please, let me know your name...</h2>
 			</div>
 
-			<div id="nameGet">
+			<div id="nameGet" class="standard">
 				<input type="text" id="nameField"/>
 				<input type="button" onClick="nameGetter();" value="is my name, Old man!"/>
 			</div>
